@@ -212,8 +212,8 @@ public class Main {
         matrixArray.get(0).set(1, index1 * -1.0);
         matrixArray.get(1).set(0, index2 * -1.0);
 
-        for (int i = 0; i < a.size(); i++)
-            for (int j = 0; j < a.size(); j++)
-                a.get(i).set(j, (double) a.get(i).get(j) * det);
+        for (int i = 0; i < matrixArray.size(); i++)
+            for (int j = 0; j < matrixArray.size(); j++)
+                matrixArray.get(i).set(j, (double) matrixArray.get(i).get(j) * determinant);
     }
 }
